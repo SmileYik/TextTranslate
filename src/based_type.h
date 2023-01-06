@@ -22,6 +22,8 @@
 #include <map>
 #include <vector>
 
+#define Function std::function;
+
 typedef std::ostream Ostream;
 typedef std::string String;
 typedef std::vector<String> StringList;

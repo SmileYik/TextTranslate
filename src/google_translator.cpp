@@ -21,7 +21,7 @@ bool GoogleTranslator::translate(const TranslateContent& content, String* transl
         {
             {"client", "gtx"},
             {"dt", "t"},
-            {"sl", content.srcLang},
+            {"sl", content.srcLang.empty() ? "auto" : content.srcLang},
             {"tl", content.aimLang},
             {"q", content.text}
         },
